@@ -1,0 +1,73 @@
+:root {
+    --font-family-primary: "Noto Sans", serif;
+    --text-lg: 48px;
+    --text-xl: 72px;
+    --lh-24: 24px;
+    --lh-57: 57.6px;
+    --lh-20: 20.16px;
+    --lh-86: 86.4px;
+    --lh-30: 30px;
+    --color-sky: skyblue;
+    --color-white: white;
+    --bg-black: #01000B;
+}
+
+.font-family-primary {
+    font-family: var(--font-family-primary);
+}
+
+.text-lg {
+    font-size: var(--text-lg);
+}
+
+.color-white {
+    color: var(--color-white);
+}
+
+.color-white {
+    background-color: var(--color-white);
+}
+
+.color-black {
+    color: var(--color-black);
+}
+
+.bg-black {
+    background-color: var(--color-black);
+}
+
+.lh-24 {
+    line-height: var(--lh-24);
+}
+
+.lh-57 {
+    line-height: var(--lh-57);
+}
+
+.lh-20 {
+    line-height: var(--lh-20);
+}
+
+.lh-86 {
+    line-height: var(--lh-86);
+}
+
+.lh-30 {
+    line-height: var(--lh-30);
+}
+
+@media (max-width:767.98px) {
+    :root {
+        --text-lg: 40px;
+        --text-xl: 60px;
+        --lh-86: 70px;
+    }
+}
+
+@media (max-width:575.98px) {
+    :root {
+        --text-lg: 32px;
+        --text-xl: 40px;
+        --lh-86: 50px;
+    }
+}
