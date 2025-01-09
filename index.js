@@ -14,4 +14,31 @@ accordionButtons.forEach(button => {
         const accordionItem = this.closest('.accordion-item');
         accordionItem.classList.toggle('active') && activeAccordionItem.classList.remove("active")
     });
+    // slider
+    $('.one-time').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 }); 

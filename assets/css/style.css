@@ -111,47 +111,6 @@
     -webkit-text-stroke: 1px var(--sec);
 }
 
-/* FAQ section sart */
-.page-faq .accordion-button {
-    box-shadow: none !important;
-}
-
-.page-faq .accordion-item * {
-    color: white;
-    position: relative;
-    z-index: 1;
-}
-
-.page-faq .accordion-item {
-    position: relative;
-    border-radius: 12px !important;
-    overflow: hidden;
-    background-color: transparent !important;
-    border: 1px solid #FFFFFF1A !important;
-}
-
-.page-faq .accordion-item.active::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 12px !important;
-    padding: 1px;
-    background: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
-    mask:
-        linear-gradient(#000 0 0) content-box,
-        linear-gradient(#000 0 0);
-    mask-composite: exclude;
-}
-
-.page-faq .accordion-button {
-    background-color: transparent !important;
-}
-
-.page-faq .accordion-button::after {
-    background-image: url("../svg/accordion.svg");
-}
-
-/* FAQ section end */
 
 @keyframes moveUpDown {
     0% {
@@ -198,6 +157,110 @@
         z-index: 1;
     }
 
+}
+.outfit {
+    display: flex;
+    flex-direction: column;
+}
+/* slider */
+.slider-person-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.pb-47 {
+    padding-bottom: 47px;
+}
+
+.box {
+    padding: 24px;
+    background: linear-gradient(180deg, rgba(59, 40, 246, 0.22) 0%, rgba(59, 40, 246, 0) 100%);
+    border-radius: 24px;
+}
+
+.px-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pt-175 {
+    padding-top: 175px;
+}
+
+.pb-210 {
+    padding-bottom: 210px;
+}
+
+@media (max-width:576px) {
+    .flex-col-sm {
+        flex-direction: column;
+    }
+
+    .pb-30-sm {
+        padding-bottom: 30px;
+    }
+
+    .text-center-sm {
+        text-align: center;
+    }
+}
+
+@media (max-width:1300px) {
+    .xl-pt-60 {
+        padding-top: 60px;
+    }
+
+    .xl-pb-60 {
+        padding-bottom: 60px;
+    }
+}
+
+/* FAQ section start */
+.page-faq .accordion-button {
+    box-shadow: none !important;
+    padding: 24px !important;
+}
+
+.page-faq .accordion-body {
+    padding: 0px 48px 24px 24px !important;
+}
+
+.page-faq .accordion-item * {
+    position: relative;
+    z-index: 1;
+}
+
+.page-faq .accordion-item {
+    position: relative;
+    border-radius: 12px !important;
+    overflow: hidden;
+    background-color: transparent !important;
+    border: 1px solid #FFFFFF1A !important;
+}
+
+.page-faq .accordion-item.active::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px !important;
+    padding: 1px;
+    background: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+.page-faq .accordion-button {
+    background-color: transparent !important;
+}
+
+.page-faq .accordion-button::after {
+    background-image: url("../svg/accordion.svg");
 }
 
 /* footer */

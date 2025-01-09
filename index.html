@@ -8,12 +8,18 @@
     <link rel="shortcut icon" href="./assets/img/robot.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body class="font-family-primary bg-black">
-    <!-- <header class="bg-img d-flex justify-content-center align-items-center min-vh-100 position-relative">
+    <header class="bg-img d-flex justify-content-center align-items-center min-vh-100 position-relative">
         <div class="container-fluid w-100">
 
             <nav class="d-flex flex-row gap-2 navbar navbar-expand-lg justify-content-between">
@@ -62,94 +68,216 @@
                 <div class="col-12 col-lg-4 d-flex justify-content-center ">
                     <div class="position-relative">
                         <img class="w-100 robot" src="./assets/img/robot.png" alt="robot">
-                        <img class="position-absolute satrun" src="./assets/svg/satrun.svg" alt="satrun">
-                        <img class="position-absolute star" src="./assets/svg/star.png" alt="star">
+                        <!-- <img class="position-absolute satrun" src="./assets/svg/satrun.svg" alt="satrun"> -->
+                        <!-- <img class="position-absolute star" src="./assets/svg/star.png" alt="star"> -->
                     </div>
                 </div>
             </div>
         </div>
 
-    </header> -->
-    <!-- <section class="bg-black pt-4">
+    </header>
+    <section class="bg-black pt-4">
         <div class="container">
             <div class="row">
                 <div class=" col-12 col-lg-4 br">
-                    <h2 class="outfit fw-semibold fs-xl text-center sub-heading text-white ">99%</h2>
-                    <p class="outfit fw-normal fs-sm text-center text-white mx-auto text-2">Of all businesses see
+                    <h2 class="font-family-primary text-white fw-semibold text-48 lh-57">99%</h2>
+                    <p class="font-family-primary text-white fw-normal fs-6 lh-24 text">Of all businesses see
                         results
                         with AI</p>
                 </div>
 
                 <div class=" col-12 col-lg-4 br">
-                    <h2 class="outfit fw-semibold fs-xl text-center sub-heading text-white ">$15T</h2>
-                    <p class="outfit fw-normal fs-sm text-center text-white mx-auto text-2">Projected global AI market
+                    <h2 class="font-family-primary text-white fw-semibold text-48 lh-57">$15T</h2>
+                    <p class="font-family-primary text-white fw-normal fs-6 lh-24">Projected global AI market
                         cap
                         by 2030</p>
                 </div>
 
                 <div class=" col-12 col-lg-4 ">
-                    <h2 class="outfit fw-semibold fs-xl text-center sub-heading text-white ">3.5X</h2>
-                    <p class="outfit fw-normal fs-sm text-center text-white mx-auto text-3">More likely to outperform
+                    <h2 class="font-family-primary text-white fw-semibold text-48 lh-57">3.5X</h2>
+                    <p class="font-family-primary text-white fw-normal fs-6 lh-24">More likely to outperform
                         competitors with AI</p>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+    <!-- slider -->
+    <section class="bg-light-black pt-175 pb-210 xl-pt-60 xl-pb-60">
+        <h1 class="pb-40 text-center font-family-primary text-white fw-semibold text-lg lh-57">
+            Testimonials
+        </h1>
+        <div class="container">
+            <div class="one-time ">
+                <div class="px-12">
+                    <div class="box">
+                        <h2 class="pb-2 text-center-sm font-family-primary text-white fw-medium fs-4 lh-28">
+                            Huge Potential!
+                        </h2>
+                        <p class="pb-47 pb-30-sm text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">
+                            “I'm genuinely impressed with how the AI nurtures conversations and handles appointment
+                            setting. It adapts quickly, is 100% human like and has consistently outperformed
+                            expectations.”
+                        </p>
+                        <div class="d-flex align-items-center gap-2 flex-col-sm">
+                            <div class="">
+                                <img src="./assets/svg/jordan.svg" alt="img">
+                            </div>
+                            <h3
+                                class="slider-person-name text-center-sm font-family-primary text-white fw-medium fs-5 lh-24">
+                                Miguel Jordan,
+                                <span
+                                    class="work text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">Appointment
+                                    Setting Coach</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-12">
+                    <div class="box">
+                        <h2 class="pb-2 text-center-sm font-family-primary text-white fw-medium fs-4 lh-28">
+                            Game Changer!
+                        </h2>
+                        <p class="pb-47 pb-30-sm text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">
+                            “ECHO AI has really revolutionized our operations. My team never has to chase down resources
+                            anymore—it's all instantly accessible, streamlining our workflow and freeing up time.”
+                        </p>
+                        <div class="d-flex align-items-center gap-2 flex-col-sm">
+                            <div class="">
+                                <img src="./assets/svg/rachel.svg" alt="img">
+                            </div>
+                            <h3
+                                class="slider-person-name text-center-sm font-family-primary text-white fw-medium fs-5 lh-24">
+                                Rachel Lettice,
+                                <span
+                                    class="work text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">Creative
+                                    Director</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-12">
+                    <div class="box">
+                        <h2 class="pb-2 text-center-sm font-family-primary text-white fw-medium fs-4 lh-28">
+                            This is Gold!
+                        </h2>
+                        <p class="pb-47 pb-30-sm text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">
+                            “The autonomous sales flow is extremely effective, to say the least. I was able to replace
+                            our full-time VA, cutting that expense completely while maintaining efficiency and our
+                            standard high performing results.”
+                        </p>
+                        <div class="d-flex align-items-center gap-2 flex-col-sm">
+                            <div class="">
+                                <img src="./assets/svg/mike.svg" alt="img">
+                            </div>
+                            <h3
+                                class="slider-person-name text-center-sm font-family-primary text-white fw-medium fs-5 lh-24">
+                                Mike Lotz,
+                                <span
+                                    class="work text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">CEO
+                                    (MREM)</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- FAQ -->
     <section class="py-5 page-faq">
         <div class="container">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item active mb-4">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
+                        <button class="accordion-button font-family-primary text-white fw-medium fs-5 lh-24"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            What is AI Automation?
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div class="accordion-body font-family-primary text-white fs-6 lh-24 fw-normal">
+                            <strong>AI automation leverages artificial intelligence to perform tasks traditionally
+                                requiring human intelligence, such as learning, data analysis, and decision-making. In a
+                                business context, it offers limitless potential, from optimizing operational efficiency
+                                to enhancing customer experience. It's like having a digital assistant that works 24/7,
+                                processing information and making decisions based on data and learned
+                                experiences.</strong>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item mb-4">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
+                        <button class="accordion-button collapsed font-family-primary text-white fw-medium fs-5 lh-24"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            How can AI Automation help me scale my business?
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div class="accordion-body font-family-primary text-white fs-6 lh-24 fw-normal">
+                            <strong>AI automation leverages artificial intelligence to perform tasks traditionally
+                                requiring human intelligence, such as learning, data analysis, and decision-making. In a
+                                business context, it offers limitless potential, from optimizing operational efficiency
+                                to enhancing customer experience. It's like having a digital assistant that works 24/7,
+                                processing information and making decisions based on data and learned
+                                experiences.</strong>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item mb-4">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
+                        <button class="accordion-button collapsed font-family-primary text-white fw-medium fs-5 lh-24"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            How does ECHO AI ensure their AI solutions are tailored to my business?
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div class="accordion-body font-family-primary text-white fs-6 lh-24 fw-normal">
+                            <strong>AI automation leverages artificial intelligence to perform tasks traditionally
+                                requiring human intelligence, such as learning, data analysis, and decision-making. In a
+                                business context, it offers limitless potential, from optimizing operational efficiency
+                                to enhancing customer experience. It's like having a digital assistant that works 24/7,
+                                processing information and making decisions based on data and learned
+                                experiences.</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed font-family-primary text-white fw-medium fs-5 lh-24"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
+                            aria-controls="collapsefour">
+                            How much do your AI Automation solutions cost?
+                        </button>
+                    </h2>
+                    <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body font-family-primary text-white fs-6 lh-24 fw-normal">
+                            <strong>AI automation leverages artificial intelligence to perform tasks traditionally
+                                requiring human intelligence, such as learning, data analysis, and decision-making. In a
+                                business context, it offers limitless potential, from optimizing operational efficiency
+                                to enhancing customer experience. It's like having a digital assistant that works 24/7,
+                                processing information and making decisions based on data and learned
+                                experiences.</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-4">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed font-family-primary text-white fw-medium fs-5 lh-24"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
+                            aria-controls="collapsefive">
+                            Sounds good, so how do I get started?
+                        </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body font-family-primary text-white fs-6 lh-24 fw-normal">
+                            <strong>AI automation leverages artificial intelligence to perform tasks traditionally
+                                requiring human intelligence, such as learning, data analysis, and decision-making. In a
+                                business context, it offers limitless potential, from optimizing operational efficiency
+                                to enhancing customer experience. It's like having a digital assistant that works 24/7,
+                                processing information and making decisions based on data and learned
+                                experiences.</strong>
                         </div>
                     </div>
                 </div>
@@ -163,29 +291,37 @@
                 <img class="img-fluid" src="./assets/svg/footer-logo.svg" alt="footerLogo" style="max-width: 150px;" />
             </a>
             <div class="text-white mb-4 mb-md-0">
-                <p class="fs-6 mb-3 text-center text-md-start">Quick Links</p>
+                <p class="fs-6 mb-3 text-center text-md-start font-family-primary text-white fw-normal fs-6 lh-20">Quick
+                    Links</p>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <a href="#about-us" class="footer-link">About us</a>
+                        <a href="#about-us"
+                            class="footer-link font-family-primary text-white fw-normal fs-6 lh-20">About us</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#solutions" class="footer-link">Solutions</a>
+                        <a href="#solutions"
+                            class="footer-link font-family-primary text-white fw-normal fs-6 lh-20">Solutions</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#benefits" class="footer-link">Benefits</a>
+                        <a href="#benefits"
+                            class="footer-link font-family-primary text-white fw-normal fs-6 lh-20">Benefits</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#testimonials" class="footer-link">Testimonials</a>
+                        <a href="#testimonials"
+                            class="footer-link font-family-primary text-white fw-normal fs-6 lh-20">Testimonials</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#faqs" class="footer-link">FAQs</a>
+                        <a href="#faqs" class="footer-link font-family-primary text-white fw-normal fs-6 lh-20">FAQs</a>
                     </li>
                 </ul>
             </div>
             <div class="text-white">
-                <p class="fs-6 mb-3 text-center text-md-start">Send Us An E-mail</p>
-                <a href="mailto:info@echoai.ai" class="footer-link text-left">info@echoai.ai</a>
-                <p class="fs-6 mb-3 text-center text-md-start">Follow Us On</p>
+                <p class="fs-6 mb-3 text-center text-md-start font-family-primary text-white fw-normal fs-6 lh-20">Send
+                    Us An E-mail</p>
+                <a href="mailto:info@echoai.ai"
+                    class="footer-link text-left font-family-primary text-white fw-normal fs-6 lh-24">info@echoai.ai</a>
+                <p class="fs-6 mb-3 text-center text-md-start font-family-primary text-white fw-normal fs-6 lh-20">
+                    Follow Us On</p>
                 <div class="d-flex justify-content-center justify-content-md-start gap-3">
                     <a href="https://www.linkedin.com"
                         class="footer-icon circle  align-items-center justify-content-center d-flex" target="_blank">
@@ -204,12 +340,20 @@
         </div>
         <div class="container pt-5 pb-4">
             <div class="line mt-60 position-relative mb-4"></div>
-            <p class="text-white text-center fs-6">Copyright ECHO AI Â© 2025 | All Rights Reserved</p>
+            <p class="text-white text-center font-family-primary text-white fw-normal fs-6 lh-24">Copyright ECHO AI Â©
+                2025 | All Rights Reserved</p>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./index.js"></script>
 </body>
 

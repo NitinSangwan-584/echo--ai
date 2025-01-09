@@ -5,6 +5,7 @@
     --lh-24: 24px;
     --lh-57: 57.6px;
     --lh-20: 20.16px;
+    --lh-28: 28.8px;
     --lh-86: 86.4px;
     --lh-30: 30px;
     --color-sky: skyblue;
@@ -36,24 +37,28 @@
     background-color: var(--color-black);
 }
 
+.lh-20 {
+    line-height: var(--lh-20);
+}
+
 .lh-24 {
     line-height: var(--lh-24);
+}
+
+.lh-28 {
+    line-height: var(--lh-28);
+}
+
+.lh-30 {
+    line-height: var(--lh-30);
 }
 
 .lh-57 {
     line-height: var(--lh-57);
 }
 
-.lh-20 {
-    line-height: var(--lh-20);
-}
-
 .lh-86 {
     line-height: var(--lh-86);
-}
-
-.lh-30 {
-    line-height: var(--lh-30);
 }
 
 @media (max-width:767.98px) {
