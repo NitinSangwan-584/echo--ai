@@ -115,7 +115,7 @@
 }
 
 .navbar-link:hover {
-    background-position: 0;
+    /* background-position: 0; */
 }
 
 .navbar-link:hover::before {
@@ -327,8 +327,10 @@
 }
 
 .footer-link:hover {
-    -webkit-text-stroke: 0.5px;
+    transform: scale(1.1);
+    transition: all 300ms linear;
     text-decoration: underline;
+    -webkit-text-stroke: 1px;
 }
 
 .line::before {
