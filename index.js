@@ -1,8 +1,8 @@
 const navbarbtn = () => {
-    document.getElementById("nav-name").classList.toggle("show-nvabar")
-    document.getElementById("rotats").classList.toggle("rotate40")
+    document.getElementById("name").classList.toggle("show-navbar")
+    document.getElementById("rotates").classList.toggle("rotate40")
     document.getElementById("transparent").classList.toggle("bg-transparent")
-    document.getElementById("rotats2").classList.toggle("rotate-45")
+    document.getElementById("rotates2").classList.toggle("rotate-45")
     document.body.classList.toggle("overflow-hidden")
 }
 
@@ -14,31 +14,31 @@ accordionButtons.forEach(button => {
         const accordionItem = this.closest('.accordion-item');
         accordionItem.classList.toggle('active') && activeAccordionItem.classList.remove("active")
     });
-    // slider
-    $('.one-time').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 3,
-        adaptiveHeight: true,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
+});
 
-}); 
+// slider
+$('.one-time').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    // adaptiveHeight: true,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                arrows: false,
+                // centerMode: true,
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+                // centerMode: true,
+                slidesToShow: 1
+            }
+        }
+    ]
+});

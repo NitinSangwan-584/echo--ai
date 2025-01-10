@@ -1,50 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url(../css/root.css);
+@import url(root.css);
 
-.w-50px {
-    width: 50px;
+.container {
+    max-width: 1140px;
 }
 
-.max-w-705 {
-    max-width: 705px;
-}
-
-.star {
-    top: -200px;
-    right: -50px;
-}
-
+/* header */
 .bg-img {
     background-image: url(../img/bg-img.png);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-color: #01000B;
-}
-
-.show-navbar {
-    right: 0 !important;
-}
-
-.connect-wallet-btn {
-    padding: 12px 32px;
-    border-radius: 10px;
-    background-color: var(--null);
-    border: 1px solid transparent;
-    color: var(--sec);
-    font-family: var(--poppins);
-    font-size: var(--fs-xl);
-    font-weight: 500;
-    transition: all 400ms linear;
-    cursor: pointer;
+    background-repeat: no-repeat;
+    padding-bottom: 250px !important;
+    background-position: bottom;
+    z-index: 1 !important;
 }
 
 .menu-lines {
     width: 30px;
     height: 5px;
     margin-bottom: 5px;
-    background-color: var(--null);
     display: flex;
-    z-index: 4;
+    z-index: 10;
     transition: all 300ms linear;
     transform-origin: left;
     border-radius: 10px;
@@ -52,27 +28,50 @@
     position: relative;
 }
 
-.z-5 {
-    z-index: 5;
+.rotate40 {
+    transform: rotate(40deg);
 }
 
-.p-19 {
-    padding: 19.5px 38.5px;
+.rotate-45 {
+    transform: rotate(-43deg);
+}
+
+.bg-transparent {
+    opacity: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
 
 .p-13 {
     padding: 13.5px 32px;
 }
 
-.button {
+.p-19 {
+    padding: 19.5px 38.5px;
+}
+
+.name li:last-child button {
+    margin-left: 120px;
+}
+
+.button,
+.button-2,
+.button-3 {
     background: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
     box-shadow: 0px 0px 12px 0px #BF97FF3D inset;
     border-radius: 57px;
     border: none;
     transition: transform all 1s ease;
+    z-index: 10;
+    cursor: pointer;
+    color: white;
 }
 
-.button:hover {
+.button:hover,
+.button-2:hover,
+.button-3:hover {
     background-image: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
     background-clip: text;
     color: transparent;
@@ -80,37 +79,29 @@
     transition: all 0.5 200ms ease;
 }
 
+.navbar-link:hover {
+    transform: scale(1.1);
+    transition: all 300ms linear;
+    text-decoration: underline;
+    -webkit-text-stroke: 1px;
+    text-decoration: underline;
+}
+
+.star {
+    position: absolute;
+    top: 0% !important;
+    right: 100% !important;
+}
+
+.saturn {
+    position: absolute;
+    top: 65% !important;
+    left: 0;
+}
+
 .robot {
     animation: moveUpDown 2s infinite ease-in-out;
 }
-
-.satrun {
-    top: 90px;
-    left: 0px;
-}
-
-.rotate40 {
-    transform: rotate(40deg);
-}
-
-.rotate-45 {
-    transform: rotate(-46deg);
-}
-
-.bg-transparent {
-    opacity: 0;
-}
-
-.connect-wallet-btn:hover {
-    background-color: var(--sec);
-    color: var(--null);
-}
-
-.navbar-link:hover {
-    color: var(--sky);
-    -webkit-text-stroke: 1px var(--sec);
-}
-
 
 @keyframes moveUpDown {
     0% {
@@ -119,7 +110,6 @@
 
     50% {
         transform: translateY(-20px);
-        /* Adjust the value for the upward movement */
     }
 
     100% {
@@ -127,11 +117,7 @@
     }
 }
 
-@media (max-width:992px) {
-    .bug {
-        display: none;
-    }
-
+@media (max-width:991.98px) {
     .nav-link {
         display: flex !important;
         flex-direction: column;
@@ -143,25 +129,47 @@
         bottom: 0;
         right: -100% !important;
         top: 0%;
-        gap: 10px;
-        transition: all 300ms linear;
-        z-index: 4;
+        transition: all 300ms linear !important;
+        z-index: 5;
     }
 
-    .show-nvabar {
+    .name li:last-child button {
+        margin-left: 0px;
+    }
+
+    .show-navbar {
         right: 0 !important;
     }
+}
 
-    .menu-btn {
-        display: block;
-        z-index: 1;
+/* section */
+.max-w-225 {
+    max-width: 225px !important;
+}
+
+.max-w-180 {
+    max-width: 180px !important;
+}
+
+@media (min-width:768px) {
+    .border-line {
+        border-right: 1px solid;
+        border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0)100%) 1 !important;
     }
 
+    .border-line-2 {
+        border-right: 1px solid;
+        border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0)100%) 1 !important;
+    }
 }
-.outfit {
-    display: flex;
-    flex-direction: column;
+
+@media (max-width:767.98px) {
+    .border-line {
+        border-right: 1px solid;
+        border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0)100%) 1 !important;
+    }
 }
+
 /* slider */
 .slider-person-name {
     display: flex;
@@ -187,12 +195,8 @@
     padding-bottom: 40px;
 }
 
-.pt-175 {
-    padding-top: 175px;
-}
-
 .pb-210 {
-    padding-bottom: 210px;
+    padding-bottom: 200px;
 }
 
 @media (max-width:576px) {
@@ -220,6 +224,10 @@
 }
 
 /* FAQ section start */
+.pb-60 {
+    padding-bottom: 60px;
+}
+
 .page-faq .accordion-button {
     box-shadow: none !important;
     padding: 24px !important;
@@ -260,7 +268,7 @@
 }
 
 .page-faq .accordion-button::after {
-    background-image: url("../svg/accordion.svg");
+    background-image: url("..//img/svg/Vector.svg");
 }
 
 /* footer */

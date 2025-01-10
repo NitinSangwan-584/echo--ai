@@ -8,7 +8,6 @@
     --lh-28: 28.8px;
     --lh-86: 86.4px;
     --lh-30: 30px;
-    --color-sky: skyblue;
     --color-white: white;
     --bg-black: #01000B;
 }
@@ -19,6 +18,10 @@
 
 .text-lg {
     font-size: var(--text-lg);
+}
+
+.text-xl {
+    font-size: var(--text-xl);
 }
 
 .color-white {

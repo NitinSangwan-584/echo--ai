@@ -18,91 +18,94 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="font-family-primary bg-black">
-    <header class="bg-img d-flex justify-content-center align-items-center min-vh-100 position-relative">
-        <div class="container-fluid w-100">
-
-            <nav class="d-flex flex-row gap-2 navbar navbar-expand-lg justify-content-between">
-                <div>
-                    <a class=" d-flex" href="/">
-                        <img src="./assets/svg/page-logo.svg" alt="logo" class="img-fluid">
-                    </a>
-                </div>
-                <div onclick="navbarbtn()" class="z-5 d-block d-lg-none">
-                    <span class="menu-lines" id="rotats"></span>
+<body class="bg-black">
+    <!-- header -->
+    <header class="text-white d-flex align-items-center justify-content-center justify-item-center bg-img bg-black">
+        <div class="container">
+            <nav class="d-flex py-2 pb-5 pb-sm-0 align-items-center justify-content-between w-100 name">
+                <a href="#"><img src="./assets/img/svg/page-logo.svg" alt="page-logo"></a>
+                <ul id="name"
+                    class="d-flex mb-0 mx-auto align-items-center gap-3 nav-link text-decoration-none list-unstyled">
+                    <li><a class="text-decoration-none navbar-link font-family-primary text-white fw-normal fs-6 lh-20"
+                            href="">About us</a></li>
+                    <li><a class="text-decoration-none navbar-link font-family-primary text-white fw-normal fs-6 lh-20"
+                            href="">Solutions</a></li>
+                    <li><a class="text-decoration-none navbar-link font-family-primary text-white fw-normal fs-6 lh-20"
+                            href="">Benefits</a></li>
+                    <li><a class="text-decoration-none navbar-link font-family-primary text-white fw-normal fs-6 lh-20"
+                            href="">Testimonials</a></li>
+                    <li><a class="text-decoration-none navbar-link font-family-primary text-white fw-normal fs-6 lh-20"
+                            href="">FAQs</a></li>
+                    <li><button class="button-2 font-family-primary fw-semibold lh-25 fs-20 border-0 p-13">Get
+                            Started</button></li>
+                </ul>
+                <!-- <ul class="list-unstyled mb-0">
+                    <li><button class="button-2 font-family-primary fw-semibold lh-25 fs-5 border-0 p-13">Get
+                            Started</button></li>
+                </ul> -->
+                <div onclick="navbarbtn()" class="z-5 d-block d-lg-none cursor-pointer">
+                    <span class="menu-lines" id="rotates"></span>
                     <span class="menu-lines" id="transparent"></span>
-                    <span class="menu-lines" id="rotats2"></span>
-                </div>
-                <div class="d-flex justify-content-around">
-                    <ul id="nav-name" class="d-flex align-items-center nav-link list-unstyled me-auto gap-lg-5">
-                        <li><a class="text-decoration-none navbar-link text-white fs-6 fw-normal lh-20" href="/">About
-                                us</a></li>
-                        <li><a class="text-decoration-none navbar-link text-white fs-6 fw-normal lh-20"
-                                href="/">Solutions</a></li>
-                        <li><a class="text-decoration-none navbar-link text-white fs-6 fw-normal lh-20"
-                                href="/">Benefits</a></li>
-                        <li><a class="text-decoration-none navbar-link text-white fs-6 fw-normal lh-20"
-                                href="/">Testimonials</a></li>
-                        <li><a class="text-decoration-none navbar-link text-white fs-6 fw-normal lh-20"
-                                href="/">FAQs</a></li>
-                        <li>
-                            <button class=" text-decoration-none text-white fs-5 lh-24 button p-13">
-                                Get Started
-                            </button>
-                        </li>
-                    </ul>
+                    <span class="menu-lines" id="rotates2"></span>
                 </div>
             </nav>
-            <div class="row align-items-center mx-auto">
-                <div class="col-12 col-lg-8  text-lg-start mx-auto">
-                    <h1 class="text-white fw-bold lh-86 text-xl max-w-705 w-100">
-                        Innovate, Automate, Accelerate
-                    </h1>
-                    <p class="text-white fs-5 fw-normal lh-30">
-                        Next Gen AI Automation to Scale Your Business.
-                    </p>
-                    <button class="text-white fs-5 lh-24 fw-semibold button p-19">
-                        Book A Call Now!
-                    </button>
-                </div>
-                <div class="col-12 col-lg-4 d-flex justify-content-center ">
-                    <div class="position-relative">
-                        <img class="w-100 robot" src="./assets/img/robot.png" alt="robot">
-                        <!-- <img class="position-absolute satrun" src="./assets/svg/satrun.svg" alt="satrun"> -->
-                        <!-- <img class="position-absolute star" src="./assets/svg/star.png" alt="star"> -->
+            <div class="flex-grow-1 d-flex align-items-center mt-5">
+                <div class="container z-3">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 text-center mt-164 d-flex flex-column align-items-center">
+                            <h1 class="heading font-family-primary fw-bold text-xl lh-86 text-center pt-3">Innovate,
+                                Automate, Accelerate</h1>
+                            <p class="font-family-primary fw-normal fs-5 lh-30 text-center mt-3">Next Gen AI Automation
+                                to Scale Your Business.</p>
+                            <button
+                                class="font-family-primary button-2 p-19 fw-semibold fs-5 lh-25 border-0 text-center mt-4">
+                                Book A Call Now!
+                            </button>
+                            <img src="./assets/img/svg/saturn.svg" alt="saturn" class="saturn mt-4">
+                        </div>
+                        <div class="col-lg-4 col-12 mt-61">
+                            <img src="./assets/img/robot.png" alt="robot" class="w-100 robot">
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
-
     </header>
-    <section class="bg-black pt-4">
-        <div class="container">
-            <div class="row">
-                <div class=" col-12 col-lg-4 br">
-                    <h2 class="font-family-primary text-white fw-semibold text-48 lh-57">99%</h2>
-                    <p class="font-family-primary text-white fw-normal fs-6 lh-24 text">Of all businesses see
-                        results
-                        with AI</p>
+    <!-- section -->
+    <section class="d-flex align-items-center justify-content-center mt-5 mb-5 pb-5">
+        <div class="container z-3">
+            <div class="row justify-content-center">
+                <div class="border-line col-6 col-md-4">
+                    <div class="text-center font-family-primary text-white fw-semibold text-lg lh-57">99%</div>
+                    <div class="align-items-center d-flex justify-content-center">
+                        <div class="font-family-primary fw-normal fs-6 max-w-180 lh-24 text-center text-white">Of all
+                            businesses see results with AI
+                        </div>
+                    </div>
                 </div>
-
-                <div class=" col-12 col-lg-4 br">
-                    <h2 class="font-family-primary text-white fw-semibold text-48 lh-57">$15T</h2>
-                    <p class="font-family-primary text-white fw-normal fs-6 lh-24">Projected global AI market
-                        cap
-                        by 2030</p>
+                <div class="border-line-2 col-6 col-md-4">
+                    <div class="text-center font-family-primary text-white fw-semibold text-lg lh-57">$15T</div>
+                    <div class="align-items-center d-flex justify-content-center">
+                        <div class="font-family-primary fw-normal fs-6 lh-24 max-w-180 text-center text-white">Projected
+                            global AI market cap by 2030
+                        </div>
+                    </div>
                 </div>
-
-                <div class=" col-12 col-lg-4 ">
-                    <h2 class="font-family-primary text-white fw-semibold text-48 lh-57">3.5X</h2>
-                    <p class="font-family-primary text-white fw-normal fs-6 lh-24">More likely to outperform
-                        competitors with AI</p>
+                <div class="col-6 col-md-4 mx-auto mx-md-0">
+                    <div class="text-center font-family-primary text-white fw-semibold text-lg lh-57">3.5X</div>
+                    <div class="align-items-center d-flex justify-content-center">
+                        <div class="font-family-primary fw-normal fs-6 lh-24 max-w-225 text-center text-white">More
+                            likely to
+                            outperform competitors with AI
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- slider -->
-    <section class="bg-light-black pt-175 pb-210 xl-pt-60 xl-pb-60">
+    <section class="bg-light-black pt-5 mt-5 pb-210 xl-pt-60 xl-pb-60">
         <h1 class="pb-40 text-center font-family-primary text-white fw-semibold text-lg lh-57">
             Testimonials
         </h1>
@@ -113,14 +116,14 @@
                         <h2 class="pb-2 text-center-sm font-family-primary text-white fw-medium fs-4 lh-28">
                             Huge Potential!
                         </h2>
-                        <p class="pb-47 pb-30-sm text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">
+                        <p class="pb-30-sm text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">
                             “I'm genuinely impressed with how the AI nurtures conversations and handles appointment
                             setting. It adapts quickly, is 100% human like and has consistently outperformed
                             expectations.”
                         </p>
-                        <div class="d-flex align-items-center gap-2 flex-col-sm">
+                        <div class="d-flex align-items-center gap-2 flex-col-sm pt-5">
                             <div class="">
-                                <img src="./assets/svg/jordan.svg" alt="img">
+                                <img src="./assets/img/svg/jordan.svg" alt="img">
                             </div>
                             <h3
                                 class="slider-person-name text-center-sm font-family-primary text-white fw-medium fs-5 lh-24">
@@ -137,13 +140,13 @@
                         <h2 class="pb-2 text-center-sm font-family-primary text-white fw-medium fs-4 lh-28">
                             Game Changer!
                         </h2>
-                        <p class="pb-47 pb-30-sm text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">
+                        <p class="pb-30-sm text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">
                             “ECHO AI has really revolutionized our operations. My team never has to chase down resources
                             anymore—it's all instantly accessible, streamlining our workflow and freeing up time.”
                         </p>
-                        <div class="d-flex align-items-center gap-2 flex-col-sm">
+                        <div class="d-flex align-items-center gap-2 flex-col-sm pt-5">
                             <div class="">
-                                <img src="./assets/svg/rachel.svg" alt="img">
+                                <img src="./assets/img/svg/rachel.svg" alt="img">
                             </div>
                             <h3
                                 class="slider-person-name text-center-sm font-family-primary text-white fw-medium fs-5 lh-24">
@@ -160,14 +163,14 @@
                         <h2 class="pb-2 text-center-sm font-family-primary text-white fw-medium fs-4 lh-28">
                             This is Gold!
                         </h2>
-                        <p class="pb-47 pb-30-sm text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">
+                        <p class="pb-30-sm text-center-sm font-family-primary text-white fw-normal fs-6 lh-24">
                             “The autonomous sales flow is extremely effective, to say the least. I was able to replace
                             our full-time VA, cutting that expense completely while maintaining efficiency and our
                             standard high performing results.”
                         </p>
-                        <div class="d-flex align-items-center gap-2 flex-col-sm">
+                        <div class="d-flex align-items-center gap-2 flex-col-sm pt-4">
                             <div class="">
-                                <img src="./assets/svg/mike.svg" alt="img">
+                                <img src="./assets/img/svg/mike.svg" alt="img">
                             </div>
                             <h3
                                 class="slider-person-name text-center-sm font-family-primary text-white fw-medium fs-5 lh-24">
@@ -183,7 +186,10 @@
         </div>
     </section>
     <!-- FAQ -->
-    <section class="py-5 page-faq">
+    <section class="pb-5 page-faq">
+        <h1 class="pb-60 text-center font-family-primary text-white fw-semibold text-lg lh-57">
+            FAQs
+        </h1>
         <div class="container">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item active mb-4">
@@ -285,10 +291,12 @@
         </div>
     </section>
     <!-- footer -->
-    <div id="solutions" class="px-5 pt-5">
-        <div class="container d-flex justify-content-between pt-5 pt-md-4 pt-lg-3 pt-xl-4 flex-column flex-md-row">
+    <div id="solutions" class="px-5 pt-5 pt-sm-0">
+        <div
+            class="container d-flex justify-content-between pt-5 pt-sm-0 pt-md-4 pt-lg-3 pt-xl-4 flex-column flex-md-row">
             <a href="/" class="mb-3 text-center text-md-start mb-md-0">
-                <img class="img-fluid" src="./assets/svg/footer-logo.svg" alt="footerLogo" style="max-width: 150px;" />
+                <img class="img-fluid" src="./assets/img/svg/footer-logo.svg" alt="footerLogo"
+                    style="max-width: 150px;" />
             </a>
             <div class="text-white mb-4 mb-md-0">
                 <p class="fs-6 mb-3 text-center text-md-start font-family-primary text-white fw-normal fs-6 lh-20">Quick
@@ -319,21 +327,21 @@
                 <p class="fs-6 mb-3 text-center text-md-start font-family-primary text-white fw-normal fs-6 lh-20">Send
                     Us An E-mail</p>
                 <a href="mailto:info@echoai.ai"
-                    class="footer-link text-left font-family-primary text-white fw-normal fs-6 lh-24">info@echoai.ai</a>
+                    class="footer-link text-left font-family-primary text-white fw-normal fs-6 lh-24 mb-4 mb-sm-0">info@echoai.ai</a>
                 <p class="fs-6 mb-3 text-center text-md-start font-family-primary text-white fw-normal fs-6 lh-20">
                     Follow Us On</p>
                 <div class="d-flex justify-content-center justify-content-md-start gap-3">
                     <a href="https://www.linkedin.com"
                         class="footer-icon circle  align-items-center justify-content-center d-flex" target="_blank">
-                        <img src="./assets/svg/in.svg" alt="LinkedIn">
+                        <img src="./assets/img/svg/in.svg" alt="LinkedIn">
                     </a>
                     <a href="https://www.instagram.com"
                         class="footer-icon circle align-items-center justify-content-center d-flex" target="_blank">
-                        <img src="./assets/svg/insta.svg" alt="Instagram" />
+                        <img src="./assets/img/svg/insta.svg" alt="Instagram" />
                     </a>
                     <a href="https://www.facebook.com"
                         class="footer-icon circle align-items-center justify-content-center d-flex" target="_blank">
-                        <img class="fb" src="./assets/svg/fb.svg" alt="Facebook">
+                        <img class="fb" src="./assets/img/svg/fb.svg" alt="Facebook">
                     </a>
                 </div>
             </div>
@@ -344,6 +352,7 @@
                 2025 | All Rights Reserved</p>
         </div>
     </div>
+    <!-- links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
